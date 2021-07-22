@@ -1,0 +1,51 @@
+<!-- learning_step
+unit:        discourse_theme_development.5
+number:      3
+title:       Handling the Content Security Policy in a theme
+description: Loading javascript from an external site creates security issues. 
+             One of the web standards which websites use to deal with those issues 
+             is called "Content Security Policy" or CSP. We won't go into 
+             scripting security issues or CSP in depth here, but it's worth 
+             reading the Mozilla article on the topic in the references to get 
+             some context.
+
+             Using CSP in Discourse is optional. You can disable it, or change 
+             the way it works in a forum's site settings (search for "content
+             security policy"). Often when developing a theme however, you either
+             don't control the forum your theme is loaded on, or don't want to 
+             disable CSP (in most circumstances you should leave it on).
+
+             So, how do we add our scripts to the CSP? In fact some of our scripts
+             are already in the CSP. If you look closely at the CSP error in your
+             browser console you should notice the script source for the Clippy
+             javascript you added in the ``head_tag`` is listed in the scripts
+             that are included, for example
+
+             ```
+             https://unpkg.com/clippyjs@latest
+             ```
+
+             The reason that's there is because Discourse will automatically add
+             script sources from ``script`` ``src`` attributes to a site's CSP.
+             Check out the meta topic "Automatically adding theme scripts to CSP"
+             in the references for how that works. 
+
+             Why do you think that's not working for the two scripts causing a 
+             CSP error? See if you can figure it out, and also how to solve it 
+             (there's two different ways). Check out the other meta.discourse.org 
+             topic in the references for more clues.
+
+             Once you resolve the CSP errors, you'll see Clippy (or one of the 
+             other Clippy.js agents, depending on which agent you've loaded) 
+             appear in the bottom right corner of the page in your theme preview 
+             on the Theme Creator.
+
+             Once you have Clippy loaded, if you're reading this in the theme 
+             code, head over to ``javascript/discourse/initializers/theme-javascript.js.es6``
+             for the next step.
+
+references:  https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+             https://meta.discourse.org/t/automatically-adding-theme-scripts-to-csp/149028
+             https://meta.discourse.org/t/theme-modifiers-a-brief-introduction/150605
+-->
+<!-- /learning_step -->

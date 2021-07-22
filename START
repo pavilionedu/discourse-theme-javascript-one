@@ -1,0 +1,71 @@
+# learning_course
+# key:         discourse_theme_development
+# /learning_course
+
+# learning_unit
+# course:       discourse_theme_development
+# number:       5
+# title:        Working with Javascript (Part 1)
+# description:  This is the first of three units about working with Javascript in 
+#               Discourse themes. This is the fifth unit in the Discourse Theme 
+#               Development course. Make sure you've completed all the previous
+#               units in the course before starting this one.
+#
+#               In particular you should be familiar with concepts discussed in 
+#               Unit 4, Working with HTML. If you haven't done that unit yet, or 
+#               haven't done it recently, please go over that unit first. It's 
+#               also worth going over the Javascript guides in the Theme 
+#               Developer Quick Reference Guide to get a sense of the different
+#               aspects of Discourse Javascript we'll be discussing in this and
+#               subsequent units.
+#
+#               When you're ready to start, clone the unit theme listed in the 
+#               references and start watching it on the Discourse Theme creator.
+# references:   https://github.com/pavilionedu/discourse-theme-html
+#               https://meta.discourse.org/t/theme-developer-quick-reference-guide/110448
+#               https://theme-creator.discourse.org
+# /learning_unit
+
+# learning_step
+# unit:         discourse_theme_development.5
+# number:       1
+# title:        When do you work with Javascript?
+# description:  There are a few reasons why you'd be working with javascript in 
+#               a Discourse theme. We'll cover the first method in this unit,
+#               and the other two in the following units. 
+#
+#               Firstly, you may be adding some embedded functionality where the
+#               Javascript is loaded from an external source, and just needs to 
+#               be linked and loaded correctly, or requires some minor local 
+#               scripting. For an example of this, please have a look at at the 
+#               Intercom Widget and Matomo Analytics theme components in the 
+#               references. Go through the theme files of each. Based on what 
+#               we've covered so far, both components should make some sense to
+#               you. This is typically the easiest scripting you'll do as it
+#               doesn't require you to understand how Discourse javascript is
+#               structured.
+#
+#               Secondly, you may be modifying or extending some existing 
+#               functionality in Discourse. You may want to change the way the 
+#               "New Topic" button behaves for example. Check out the Expanded
+#               Create Topic and New Topic Button components (in the references)
+#               for examples of this. This kind of work requires you to understand 
+#               a bit about how the Discourse javascript works and will involve 
+#               the Discourse client-side javascript api.
+#
+#               Lastly, you may want to add your own entirely new functionality
+#               within Discourse. The complexity of this can range significantly
+#               from something relatively simple like the Category Banners 
+#               component, to something complex like the Kanban Theme Component.
+#               We'll cover this last.
+#
+#               If you're working from the repository, head over to 
+#               ``head_tag.html``, where we'll get started on the first type.
+#
+# references:   https://github.com/discourse/discourse-intercom-widget
+#               https://github.com/discourse/discourse-matomo-analytics
+#               https://github.com/jordanvidrine/discourse-expanded-create-topic
+#               https://github.com/discourse/discourse-new-topic-button-theme-component
+#               https://github.com/discourse/discourse-category-banners
+#               https://github.com/discourse/discourse-kanban-theme
+# /learning_step

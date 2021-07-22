@@ -1,0 +1,39 @@
+<!-- learning_step
+unit:        discourse_theme_development.5
+number:      2
+title:       Loading Javascript from an external site
+description: Loading javascript from an external site is typically handled in the
+             ``head_tag.html`` and ``body_tag.html`` files. We've covered how those 
+             files are inserted into the Discourse HTML in Unit 4. In this unit 
+             we're going to take that to the next level by loading some scripts.
+
+             We're going to use the library Clippy.js, a embeddable version of 
+             the old Microsoft Word animated helper who took the form of a paper 
+             clip, aka "Clippy". We'll be embedding Clippy in Discourse using 
+             this library.
+
+             https://github.com/smore-inc/clippy.js
+
+             As we're focusing on loading external javascript here, we'll use 
+             the CDN-hosted version of the Clippy.js assets described in this 
+             re-write of the library. We'll look at loading the assets locally
+             in our next unit.
+
+             https://github.com/pi0/clippyjs#browser
+
+             Copy the example code from the readme of the repo linked above and 
+             paste it into the relevant files in this unit's theme. If you're 
+             unsure of where it should go, go back over our discussion of the 
+             HTML structure and theme files in Unit 4.
+
+             When you've added the code and refreshed the page in your
+             Theme Creator preview you should notice an error in your browser 
+             console that starts with "Refused to load the script". Head over to
+             ``body_tag.html`` and we'll discuss what that means and what to do
+             about it.
+
+             > Note. If the ``unpkg.com`` version of the Clippy.js doesn't load
+             > for you, you'll find a minified version of the js on ``jsdelivr``
+             > which you can use instead.
+-->
+<!-- /learning_step -->
