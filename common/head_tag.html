@@ -11,15 +11,19 @@ description: Loading javascript from an external site is typically handled in th
              the old Microsoft Word animated helper who took the form of a paper 
              clip, aka "Clippy". We'll be embedding Clippy in Discourse using 
              this library.
-
+             
+             ```
              https://github.com/smore-inc/clippy.js
+             ```
 
              As we're focusing on loading external javascript here, we'll use 
              the CDN-hosted version of the Clippy.js assets described in this 
              re-write of the library. We'll look at loading the assets locally
              in our next unit.
 
+             ```
              https://github.com/pi0/clippyjs#browser
+             ```
 
              Copy the example code from the readme of the repo linked above and 
              paste it into the relevant files in this unit's theme. If you're 
@@ -31,9 +35,5 @@ description: Loading javascript from an external site is typically handled in th
              console that starts with "Refused to load the script". Head over to
              ``body_tag.html`` and we'll discuss what that means and what to do
              about it.
-
-             > Note. If the ``unpkg.com`` version of the Clippy.js doesn't load
-             > for you, you'll find a minified version of the js on ``jsdelivr``
-             > which you can use instead.
 -->
 <!-- /learning_step -->
