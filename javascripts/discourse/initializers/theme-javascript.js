@@ -57,6 +57,7 @@
 *              and using the plugin api methods in the ``withPluginApi`` callback
 *
 *              - Say hello when he's initially loaded
+*
 *              - Tell you what the title of the page is when it changes.
 *
 *              You'll find some clues in the theme components referenced back in
