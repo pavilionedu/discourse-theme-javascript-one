@@ -1,5 +1,5 @@
 /* learning_step
-* unit:        discourse_theme_development.5
+* unit:        discourse_theme_development.6
 * number:      4
 * title:       Interacting with Discourse javascript
 * description: Now that we've loaded Clippy, we want to make him react to changes
@@ -25,7 +25,7 @@
 /* /learning_step */
 
 /* learning_step
-* unit:        discourse_theme_development.5
+* unit:        discourse_theme_development.6
 * number:      5
 * title:       Using the client side Plugin API
 * description: For any javascript in a Discourse theme that extends or modifies
@@ -68,15 +68,40 @@ import { withPluginApi } from "discourse/lib/plugin-api";
 export default {
   name: "theme-javascript-initializer",
   initialize() {
-    withPluginApi("0.8.12", api => {
+    let clippyAgent;
 
+    clippy.load('Clippy', function(agent){
+      clippyAgent = agent;
+      clippyAgent.show();
+      clippyAgent.speak("Hey there, welcome to our Discourse! I'm Clippy");
+    });
+
+    withPluginApi("0.8.30", api => {
+      api.onPageChange((url, title) => {
+        if (clippyAgent) {
+          clippyAgent.speak(`Looks like you changed the page to ${title}`);
+        }
+      });
+
+      api.onAppEvent('composer:opened', () => {
+        clippyAgent.speak(`Oooo a bold move! Let's see what you have to say`);
+      });
+
+      api.composerBeforeSave(function() {
+        if (this.reply.toLowerCase().includes("i hate clippy")) {
+          clippyAgent.speak(`That's a terrible thing to say! Can't let you post that.`);
+          return Promise.reject();
+        } else {
+          return Promise.resolve();
+        }
+      });
     });
   }
 };
 /* /learning_step */
 
 /* learning_step
-* unit:        discourse_theme_development.5
+* unit:        discourse_theme_development.6
 * number:      6
 * title:       Using the client-side event bus.
 * description: Now that we're loading our external javascript when Discourse is
@@ -114,7 +139,7 @@ export default {
 /* /learning_step */
 
 /* learning_step
-* unit:        discourse_theme_development.5
+* unit:        discourse_theme_development.6
 * number:      7
 * title:       The idiosyncrasies of the Plugin API
 * description: Before we move on from Clippy, we're going to use him for one

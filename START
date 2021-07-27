@@ -4,7 +4,7 @@
 
 # learning_unit
 # course:       discourse_theme_development
-# number:       5
+# number:       6
 # title:        Working with Javascript (Part 1)
 # description:  This is the first of three units about working with Javascript in 
 #               Discourse themes. This is the fifth unit in the Discourse Theme 
@@ -28,7 +28,7 @@
 # /learning_unit
 
 # learning_step
-# unit:         discourse_theme_development.5
+# unit:         discourse_theme_development.6
 # number:       1
 # title:        When do you work with Javascript?
 # description:  There are a few reasons why you'd be working with javascript in 
