@@ -27,10 +27,9 @@
 #
 #               If you're reading this in the unit theme code, the last step in 
 #               a file will tell you where to go to find the next step (if there 
-#               is one). If you can't find it, do a search for learning_step 
-#               in the theme folder in your code editor to see all the steps in 
-#               the unit. All units start in the START file and end in the 
-#               FINISH file.
+#               is one). If you can't find it, do a search for in the theme 
+#               folder in your code editor to see all the steps in the unit. 
+#               All units start in the START file and end in FINISH.
 # references:   https://github.com/pavilionedu/discourse-theme-javascript-one
 #               https://meta.discourse.org/t/110448
 #               https://theme-creator.discourse.org
