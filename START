@@ -7,23 +7,32 @@
 # number:       6
 # title:        Working with Javascript (Part 1)
 # description:  This is the first of three units about working with Javascript in 
-#               Discourse themes. This is the fifth unit in the Discourse Theme 
-#               Development course. Make sure you've completed all the previous
-#               units in the course before starting this one.
+#               Discourse themes. This is the sixth unit in the Discourse Theme 
+#               Development course. When you're ready to start, clone this unit 
+#               theme and start watching it on the [Discourse Theme Creator](https://theme-creator.discourse.org).
 #
-#               In particular you should be familiar with concepts discussed in 
-#               Unit 4, Working with HTML. If you haven't done that unit yet, or 
-#               haven't done it recently, please go over that unit first. It's 
-#               also worth going over the Javascript guides in the Theme 
-#               Developer Quick Reference Guide to get a sense of the different
-#               aspects of Discourse Javascript we'll be discussing in this and
-#               subsequent units.
+#               ### When reading on Pavilion Education
 #
-#               When you're ready to start, clone the unit theme listed in the 
-#               references and start watching it on the Discourse Theme creator.
+#               If you're taking this unit on [Pavilion Education](https://education.thepavilion.io),
+#               mark the ``self review`` steps ``Complete`` when you've completed 
+#               them. If a step is marked ``peer review`` or ``teacher review`` 
+#               post a comment on the step with your answer and click "Submit"
+#               to notify your peers or teachers.
 #
+#               There's a video of a teacher completing the unit in the final 
+#               step, which you'll be able to watch once all other steps are
+#               complete.
+#
+#               ### When reading the code
+#
+#               If you're reading this in the unit theme code, the last step in 
+#               a file will tell you where to go to find the next step (if there 
+#               is one). If you can't find it, do a search for learning_step 
+#               in the theme folder in your code editor to see all the steps in 
+#               the unit. All units start in the START file and end in the 
+#               FINISH file.
 # references:   https://github.com/pavilionedu/discourse-theme-html
-#               https://meta.discourse.org/t/theme-developer-quick-reference-guide/110448
+#               https://meta.discourse.org/t/110448
 #               https://theme-creator.discourse.org
 # /learning_unit
 
@@ -32,27 +41,24 @@
 # number:       1
 # title:        When do you work with Javascript?
 # description:  There are a few reasons why you'd be working with javascript in 
-#               a Discourse theme. We'll cover the first method in this unit,
+#               a Discourse theme. We'll cover the first reason in this unit,
 #               and the other two in the following units. 
 #
 #               Firstly, you may be adding some embedded functionality where the
 #               Javascript is loaded from an external source, and just needs to 
 #               be linked and loaded correctly, or requires some minor local 
-#               scripting. For an example of this, please have a look at at the 
-#               Intercom Widget and Matomo Analytics theme components in the 
-#               references. Go through the theme files of each. Based on what 
-#               we've covered so far, both components should make some sense to
-#               you. This is typically the easiest scripting you'll do as it
-#               doesn't require you to understand how Discourse javascript is
-#               structured.
+#               scripting. For an example of this, have a look at at the 
+#               Intercom Widget theme components. This is typically the easiest 
+#               scripting you'll do as it doesn't require you to understand how 
+#               Discourse javascript is structured.
 #
 #               Secondly, you may be modifying or extending some existing 
 #               functionality in Discourse. You may want to change the way the 
 #               "New Topic" button behaves for example. Check out the Expanded
-#               Create Topic and New Topic Button components (in the references)
-#               for examples of this. This kind of work requires you to understand 
-#               a bit about how the Discourse javascript works and will involve 
-#               the Discourse client-side javascript api.
+#               Create Topic component for an example of this. This kind of work 
+#               requires you to understand a bit about how the Discourse 
+#               javascript works and will involve the Discourse client-side 
+#               javascript api.
 #
 #               Lastly, you may want to add your own entirely new functionality
 #               within Discourse. The complexity of this can range significantly
@@ -60,13 +66,14 @@
 #               component, to something complex like the Kanban Theme Component.
 #               We'll cover this last.
 #
-#               If you're working from the repository, head over to 
-#               ``head_tag.html``, where we'll get started on the first type.
+#               In many cases you'll be using multiple approaches at once, i.e. 
+#               embedding, extending and adding, however we're going to be 
+#               addressing each in turn through example cases to illustrate
+#               some of the specific issues you might face in each case.
 #
+# next_step:    head_tag.html
 # references:   https://github.com/discourse/discourse-intercom-widget
-#               https://github.com/discourse/discourse-matomo-analytics
 #               https://github.com/jordanvidrine/discourse-expanded-create-topic
-#               https://github.com/discourse/discourse-new-topic-button-theme-component
 #               https://github.com/discourse/discourse-category-banners
 #               https://github.com/discourse/discourse-kanban-theme
 # /learning_step
