@@ -4,4 +4,5 @@
 # title:        Unit video
 # description:  This is where video demonstrating how to complete the unit goes
 #               when you're taking the unit on https://education.thepavilion.io
+# visibility:   hidden:until_steps_completed
 # /learning_step

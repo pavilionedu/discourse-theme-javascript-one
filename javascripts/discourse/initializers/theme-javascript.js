@@ -63,6 +63,8 @@
 *
 *              You'll find some clues in the theme components referenced back in
 *              Step 1 of this unit.
+* review:      peer
+* mark:        pass_change_fail
 */
 import { withPluginApi } from "discourse/lib/plugin-api";
 
@@ -112,6 +114,8 @@ export default {
 *              whenever you open the composer. Then see if you can make him
 *              perform different animations when you type something in the
 *              composer (as he sometimes used to do in MS Word).
+* review:      peer
+* mark:        pass_change_fail
 */
 /* /learning_step */
 
@@ -143,5 +147,7 @@ export default {
 *              being posted, and get Clippy to say a disapproving message in
 *              response. You'll need to use some of the codebase searching skills
 *              we covered in previous units.
+* review:      peer
+* mark:        pass_change_fail
 */
 /* /learning_step */
