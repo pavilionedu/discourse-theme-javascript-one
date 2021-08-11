@@ -10,26 +10,6 @@
 #               Discourse themes. This is the sixth unit in the Discourse Theme 
 #               Development course. When you're ready to start, clone this unit 
 #               theme and start watching it on the [Discourse Theme Creator](https://theme-creator.discourse.org).
-#
-#               ### When reading on Pavilion Education
-#
-#               If you're taking this unit on [Pavilion Education](https://education.thepavilion.io),
-#               mark the ``self review`` steps ``Complete`` when you've completed 
-#               them. If a step is marked ``peer review`` or ``teacher review`` 
-#               post a comment on the step with your answer and click "Submit"
-#               to notify your peers or teachers.
-#
-#               There's a video of a teacher completing the unit in the final 
-#               step, which you'll be able to watch once all other steps are
-#               complete.
-#
-#               ### When reading the code
-#
-#               If you're reading this in the unit theme code, the last step in 
-#               a file will tell you where to go to find the next step (if there 
-#               is one). If you can't find it, do a search for in the theme 
-#               folder in your code editor to see all the steps in the unit. 
-#               All units start in the START file and end in FINISH.
 # references:   https://github.com/pavilionedu/discourse-theme-javascript-one
 #               https://meta.discourse.org/t/110448
 #               https://theme-creator.discourse.org
